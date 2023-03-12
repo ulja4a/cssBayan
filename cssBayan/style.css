@@ -97,7 +97,7 @@ h1 {
         margin: 0 auto;
     }
     .meme-title {
-        max-width: 800px;
+        max-width: 100vw;
     }
     .meme-title:hover {
         color: rgb(126, 30, 129);
@@ -114,12 +114,12 @@ h1 {
 
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1920px) {
     body {
         font-size: 1.6rem;
     }
     .meme-title {
-        max-width: 1900px;
+        max-width: 100vw;
         
     }
     .meme-image {
