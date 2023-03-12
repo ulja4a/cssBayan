@@ -1,0 +1,148 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+     }
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+}
+.meme-item {
+    border-top: 2px solid #455656;
+}
+
+.memes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.meme-title {
+    display: flex;
+    max-width: 300px;
+    justify-content: space-between;
+    color: blue;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.meme-image {
+    display: none;
+    
+    
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.meme-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+}
+
+.icon {
+    width: 1.6rem;
+}
+
+.meme-input:hover + .icon {
+    
+    transition: transform .35s;
+    transform: rotate(45deg);
+}
+
+.meme-input:checked ~ .meme-image {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.meme-input:checked ~ .meme-title {
+    color: black;
+}
+@media (max-width: 320px) {
+    img {
+        width: 95vw;
+    }
+}
+@media (min-width: 820px) {
+    body {
+        font-size: 1.4rem;
+    }
+    .meme-image {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .meme-title {
+        max-width: 100vw;
+    }
+    .meme-title:hover {
+        color: rgb(126, 30, 129);
+        transition: .2s ease;
+    }
+    .meme-title:active > .icon {
+        transition: transform .35s;
+        transform: rotate(45deg);
+    }
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+         }
+
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 1.6rem;
+    }
+    .meme-title {
+        max-width: 100vw;
+        
+    }
+    .meme-image {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .meme-input:hover ~ .meme-image {
+        color: #ffffff;
+        display: block;
+        max-width: 500px;
+        transition: 2s ease;
+    }
+    
+    
+    .meme-title:hover > .icon {
+        transition: transform .35s;
+        transform: rotate(45deg);
+    }
+   
+    .wrapper {
+        max-width: 1900px;
+        margin: 0 auto;
+         }
+
+}
